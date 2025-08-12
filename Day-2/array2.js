@@ -25,7 +25,7 @@ numbers.forEach(number => {
 // SYNTAX
 // const new Array = originalArray.map(callbackFunction)
 
-const doublenumbers = numbers.forEach(number =>{
+const doublenumbers = numbers.map(number =>{
     return number * 2;
 })
 console.log(doublenumbers)
