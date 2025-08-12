@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fourth js</title>
+        <style>
+            #myButton {
+                background-color: red;
+                color: white;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+            }
+
+            #myButton:hover {
+                background-color: blue;
+            }
+            body{
+                height: 2000px;
+            }
+    </style>
+    </head>
+    <body>
+    <button id="myButton">Hover over me</button>
+    <!-- <button id="myButton">Click me</button> -->
+    <form>
+        <input type="text" name="myinput" id="myinput">
+    </form>
+
+    <h1 id="myHeading">Hello World!</h1>
+    <script>
+        // // Select the button element
+		// var myButton = document.getElementById("myButton");
+		// // Add the click event handler to the button element
+		// myButton.onclick = function() {
+		// 	alert("Button clicked!");
+		// };
+
+      // Select the button element
+      var myButton = document.getElementById("myButton");
+      // Add the mouseover event handler to the button element
+      myButton.onmouseover = function () {
+        myButton.style.backgroundColor = "green";
+      };
+      // Add the mouseout event handler to the button element
+      myButton.onmouseout = function () {
+        myButton.style.backgroundColor = "red";
+      };
+
+      let myInput = document.getElementById("myinput");
+        //   myInput.onchange = function () {
+        //     alert("Input value has changed!");
+        //   };
+      myInput.onkeydown = function (event) {
+        console.log(event.keyCode)
+      }
+      myInput.addEventListener("keydown", function (event) {
+         console.log(event.key)
+      });
+
+    let myHeading = document.getElementById("myHeading");
+    window.onload = function() {
+        myHeading.style.color = "red";
+    };
+
+    let myWindow = window
+    myWindow.onscroll = function () {
+        console.log("Winodw scrolled")
+    }
+    </script>
+    <script src="Event.handelers.js"></script>
+    </body>
+</html>
