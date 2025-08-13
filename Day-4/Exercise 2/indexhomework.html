@@ -35,7 +35,7 @@
     };
 
     BoxContainer.onclick = function() {
-	BoxContainer.remove();
+	  BoxContainer.remove();
     };
 
     let buttonElement = document.createElement('button');
@@ -46,7 +46,7 @@
     document.getElementById('container').appendChild(buttonElement);
 
     buttonElement.addEventListener ("click", function (event){
-	paragraph.textContent = "Congratulations! You completed the DOM Manipulation Challenge!";
+	  paragraph.textContent = "Congratulations! You completed the DOM Manipulation Challenge!";
     buttonElement.remove();
     });
   </script>
